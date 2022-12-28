@@ -1,11 +1,11 @@
-import React from "react";
+import Home from 'pages/home/Home';
 
 function App() {
-  return (
-    <div>
-      <h1>Eu sou o APP</h1>
-    </div>
-  );
+   return (
+      <div>
+         <Home />
+      </div>
+   );
 }
 
 export default App;
