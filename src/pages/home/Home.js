@@ -1,10 +1,5 @@
-import PlayerDeVideo from 'components/playerDeVideo/PlayerDeVideo';
+import VideoList from 'components/videoList/VideoList';
 
 export default function Home() {
-   return (
-      <div>
-         <h1>Eu sou o Home</h1>
-         <PlayerDeVideo />
-      </div>
-   );
+   return <VideoList />;
 }
