@@ -1,10 +1,11 @@
 import video from 'assets/videos/video1.mp4';
+import './style.css';
 
 export default function PlayerDeVideo() {
    return (
-      <div style={{ width: '600', backgroundColor: 'lightblue' }}>
+      <div className="player-wrapper">
          <div>
-            <video width="600" height="400" controls>
+            <video className="react-player" controls autoPlay>
                <track kind="captions" />
                <source src={video} />
             </video>

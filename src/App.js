@@ -1,10 +1,14 @@
-import Home from 'pages/home/Home';
+import { ThemeProvider } from 'styled-components';
+import Router from './routes/Router';
+import GlobalStyles from './styles/Global';
+import theme from './styles/Theme';
 
 function App() {
    return (
-      <div>
-         <Home />
-      </div>
+      <ThemeProvider theme={theme}>
+         <Router />
+         <GlobalStyles />
+      </ThemeProvider>
    );
 }
 
