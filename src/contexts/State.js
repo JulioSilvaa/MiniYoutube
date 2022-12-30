@@ -1,7 +1,6 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import youtubeApi from 'services/youtube';
 import GlobalContext from './Global';
 
@@ -10,17 +9,12 @@ function GlobalState(props) {
 
    const filterImage = () => {
       youtubeApi
-         .get(`/search`)
+         .get(`/videos`)
          .then((res) => setVideos(res.data.items))
          .catch((err) => console.error(err));
    };
 
-   const data = {
-      filterImage,
-      videos,
-   };
-
-   console.log(data);
+   const data = useMemo(() => ({ filterImage, videos }), []);
 
    return (
       <GlobalContext.Provider value={data}>

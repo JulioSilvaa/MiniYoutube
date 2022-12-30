@@ -9,8 +9,8 @@ function App() {
       <ThemeProvider theme={theme}>
          <GlobalState>
             <Router />
-            <GlobalStyles />
          </GlobalState>
+         <GlobalStyles />
       </ThemeProvider>
    );
 }
