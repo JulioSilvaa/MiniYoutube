@@ -1,4 +1,5 @@
 import Header from 'components/header/Header';
+// import GlobalState from 'contexts/State';
 import Home from 'pages/home/Home';
 import ShowVideo from 'pages/showVideo/ShowVideo';
 import Teste from 'pages/teste';
@@ -14,7 +15,7 @@ function Router() {
          </Routes>
          <Container>
             <Routes>
-               <Route path="/assistindo" element={<ShowVideo />} />
+               <Route path="/assistindo/:id" element={<ShowVideo />} />
             </Routes>
          </Container>
          <Routes>

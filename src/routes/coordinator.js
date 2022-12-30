@@ -2,8 +2,8 @@ export const goToHomePage = (navigate) => {
    navigate('/home');
 };
 
-export const goToShowVideo = (navigate) => {
-   navigate('/showVideo');
+export const goToShowVideo = (navigate, id) => {
+   navigate(`/assistindo/${id}`);
 };
 
 export const goToSignUpPage = (navigate) => {

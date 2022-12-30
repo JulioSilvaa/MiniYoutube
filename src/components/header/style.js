@@ -5,9 +5,9 @@ export const CHeader = styled.div`
    justify-content: space-between;
    justify-items: center;
    align-items: center;
-   padding: 20px;
+   padding: 0 20px;
    background-color: ${({ bg }) => bg};
-   height: 8vh;
+   height: 80px;
    flex-wrap: wrap;
    position: sticky;
    top: 0;
@@ -18,7 +18,7 @@ export const CHeader = styled.div`
 `;
 
 export const logo = styled.img`
-   max-width: 90px;
+   max-width: 30%;
    border-radius: 8px;
 `;
 
