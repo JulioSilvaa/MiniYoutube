@@ -1,5 +1,5 @@
 export const goToHomePage = (navigate) => {
-   navigate('/home');
+   navigate('/');
 };
 
 export const goToShowVideo = (navigate, id) => {
