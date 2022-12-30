@@ -25,6 +25,9 @@ function Header() {
       e.preventDefault();
       console.log(e);
    }
+   function handleSubmit() {
+      console.log();
+   }
 
    return (
       <S.CHeader bg={!blackHeader ? '#fff' : '#f8f8ff'}>
@@ -34,7 +37,7 @@ function Header() {
             </Link>
          </div>
          <div>
-            <form onSubmit="{handleSubmit}">
+            <form onSubmit={handleSubmit}>
                <input
                   type="text"
                   placeholder="Buscar..."
